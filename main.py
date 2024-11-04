@@ -15,7 +15,7 @@ sides = [
 word_list = set(word.lower() for word in words.words())
 validWords = set()
 
-def get_side(letter):
+def getSide(letter):
     for side in sides:
         if letter in side:
             return(side)
@@ -27,4 +27,12 @@ for side in sides:
             if word[0] == letter:
                 print(type(word))
                 print(word)
-                get_side(word[0])
+                getSide(word[0])
+
+def getValidWords(letter, maxLength):
+    currentSide = getSide(letter)
+    currentWords = set()
+    for word in word_list:
+        if word[0] == letter:
+            
+            getSide(word[0])
