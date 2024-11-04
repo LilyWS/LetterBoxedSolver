@@ -13,12 +13,13 @@ sides = [
 ]
 
 word_list = set(word.lower() for word in words.words())
-possibleWords = set()
+validWords = set()
 
 def get_side(letter):
     for side in sides:
         if letter in side:
-            print(side)
+            return(side)
+    return False
 
 for side in sides:
     for letter in side:
