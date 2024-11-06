@@ -6,10 +6,10 @@ from nltk.corpus import words
 #sideInput = input("Please enter sides, 3 letters followed by | for each side")
 
 sides = [
-    ["e", "r", "a"],
-    ["i", "p", "f"],
-    ["t", "n", "c"],
-    ["x", "o", "m"]
+    ["e", "r", "b"],
+    ["u", "l", "n"],
+    ["k", "m", "i"],
+    ["j", "a", "v"]
 ]
 
 wordList = set(word.lower() for word in words.words())
@@ -29,7 +29,7 @@ def getSide(letter):
 #                print(word)
 #                getSide(word[0])
 
-def generate_words(current_word, current_side, max_length=8):
+def generate_words(current_word, current_side, max_length=7):
     if len(current_word) == 1:
         print(current_word)
     if len(current_word) > max_length:
